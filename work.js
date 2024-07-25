@@ -1,6 +1,6 @@
 var rand1 = Math.random();
 rand1 = rand1 * 6;
-rand1 = Math.floor(rand1);
+rand1 = Math.floor(rand1+1);
 
 var num1 = 1;
 var num2 = 2;
@@ -11,7 +11,7 @@ var num6 = 6;
 
 var rand2 = Math.random();
 rand2 = rand2 * 6;
-rand2 = Math.floor(rand2);
+rand2 = Math.floor(rand2+1);
 
 
 if (window.performance.navigation.type === 1){
@@ -70,5 +70,9 @@ function rollDice(){
     if(num6 === rand2){
         document.querySelector(".b2").innerHTML = "<img src= './images/dice6.png'>";
     }
+
+    document.querySelector(".ab").textContent = rand1;
+    document.querySelector(".bb").textContent = rand2;
+
 
 }
